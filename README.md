@@ -5,7 +5,7 @@
 
 ## 本專案的智慧財產授權條款<br />Intellectual property license of this project
 This project is licensed as CC0.
-To the extent possible under law, Vdragon(pika1021@gmail.com) has waived all copyright and related or neighboring rights to 通用程式來源程式碼範本(Generic Software Source Code Templates). This work is published from: 台灣.
+To the extent possible under law, Vdragon(Vdragon.Taiwan@gmail.com) has waived all copyright and related or neighboring rights to 通用程式來源程式碼範本(Generic Software Source Code Templates). This work is published from: 台灣.
 
 ## 檔案與目錄說明<br />File and directory description
 * README.md
