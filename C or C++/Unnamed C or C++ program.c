@@ -134,3 +134,24 @@
 
 /* 函式的實作
  * Function implementations */
+	/* # 主程式（C/C++ 程式的進入點）
+     ## 參數
+     ### argc
+     呼叫此程式的命令列參數數量
+     
+     ### argv[]
+     存放呼叫此程式的命令列參數陣列 
+	   
+	   ## 回傳值
+	   ### EXIT_SUCCESS（此常數的定義位於 stdlib.h）
+	   代表程式執行成功
+	   
+	   ### EXIT_FAILURE（此常數的定義位於 stdlib.h）
+	   代表程式執行失敗
+	   
+	   ### 其他數值
+	   由開發者自行定義 */
+	int main(int argc, char* argv[]){
+		
+		return EXIT_SUCCESS;
+	}
