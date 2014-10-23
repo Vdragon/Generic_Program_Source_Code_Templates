@@ -1,21 +1,23 @@
 /* 
-	請見本檔案的標頭(header)檔案以得到更多關於本程式的說明
+	Unnamed C or C++ program.c
+	請見本檔案的標頭(header)檔案（如果有的話）以得到更多關於本程式的說明
 	
-	本程式的框架基於「C/C++ 程式範本」專案
-	This program's frame is based on "C/C++ program templates" project
-		https://github.com/Vdragon/C_CPP_program_templates
-	建議編輯器設定
-	Recommended editor settings
+	本來源程式碼的架構基於「通用程式來源程式碼範本」專案
+	This source code's structure is based on "Generic Software Source Code Templates" project
+		https://github.com/Vdragon/Generic_Program_Source_Code_Templates
+		
+	建議的文字編輯器設定
+	Recommended text editor settings
 		Indentation by tab character
 		Tab character width = 2 space characters
 */
 /* 程式所引入(include)之函式庫的標頭(header)檔案
  * Included library headers */
-	/* 自己的 header 檔案
+	/* 引入自己的定義內容
 		#include "SELF_NAME.h" */
 		
-	/* 標準Ｃ函式庫
-	 * Standard C library
+	/* 引入標準Ｃ函式庫的定義
+	 * Include Standard C Library definitions
 	 *   C library - C++ Reference
 	 *   http://www.cplusplus.com/reference/clibrary/ */
 		/* Definitions of functions to perform data input/output(I/O) operations
@@ -88,7 +90,7 @@
 			#include <<name>.h>
 			#include <c<name>> */
 		
-	/* 標準 C++ 函式庫 */
+	/* 引入標準 C++ 函式庫的定義 */
 		/* Input/Output related */
 			/* Standard Input / Output Streams Library
 				#include <iostream> */
@@ -105,11 +107,11 @@
 			/* 
 				#include <> */
 	
-	/* GNU gettext library
+	/* 引入 GNU gettext library 的定義
 		#include <libintl.h> */
 		
-	/* Ｖ字龍的 C/C++ 函式庫蒐集
-	 * Vdragons C CPP Libraries Collection
+	/* 引入「Ｖ字龍的 C/C++ 函式庫蒐集」的定義內容
+	 * Include "Vdragons C CPP Libraries Collection" definitions
 	 *   https://github.com/Vdragon/Vdragons_C_CPP_Libraries_Collection */
 		
 	
@@ -118,7 +120,7 @@
 	/* GNU gettext library
 		#define _(Untranslated_C_string) gettext(Untranslated_C_string) */
 
-/* 資料類型、enumeration、資料結構與物件類別的定義
+/* 資料類型、列舉(enumeration)、資料結構與物件類別的定義
  * Definition of data type, enumeration, data structure and class */
 
 /* 函式的宣告（函式雛型）
@@ -127,8 +129,8 @@
      Usage 
        預先告訴編譯器(compiler)子程式的存在 */
 
-/* 全域變數
- * Global Variables */
+/* 全域變數宣告
+ * Global variable declarations */
 
 /* 函式的實作
  * Function implementations */
