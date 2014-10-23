@@ -1,11 +1,11 @@
-# 通用程式來源程式碼範本<br />Generic Software Source Code Templates
+# 通用程式來源程式碼範本<br />Generic Program Source Code Templates
 
 ## 這是什麼？<br />What is this?
 本專案提供了各程式語言來源程式碼檔案的範本(template)供需要者使用。
 
 ## 本專案的智慧財產授權條款<br />Intellectual property license of this project
 This project is licensed as CC0.
-To the extent possible under law, Vdragon(Vdragon.Taiwan@gmail.com) has waived all copyright and related or neighboring rights to 通用程式來源程式碼範本(Generic Software Source Code Templates). This work is published from: 台灣.
+To the extent possible under law, Vdragon(Vdragon.Taiwan@gmail.com) has waived all copyright and related or neighboring rights to 通用程式來源程式碼範本(Generic Program Source Code Templates). This work is published from: 台灣.
 
 ## 檔案與目錄說明<br />File and directory description
 * README.md

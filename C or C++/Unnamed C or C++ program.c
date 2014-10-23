@@ -3,7 +3,7 @@
 	請見本檔案的標頭(header)檔案（如果有的話）以得到更多關於本程式的說明
 	
 	本來源程式碼的架構基於「通用程式來源程式碼範本」專案
-	This source code's structure is based on "Generic Software Source Code Templates" project
+	This source code's structure is based on "Generic Program Source Code Templates" project
 		https://github.com/Vdragon/Generic_Program_Source_Code_Templates
 		
 	建議的文字編輯器設定
