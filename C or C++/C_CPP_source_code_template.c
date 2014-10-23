@@ -1,5 +1,5 @@
 /* 
-	請見本檔案的標頭(header)檔案以得到更多關於本檔案的說明
+	請見本檔案的標頭(header)檔案以得到更多關於本程式的說明
 	
 	本程式的框架基於「C/C++ 程式範本」專案
 	This program's frame is based on "C/C++ program templates" project
