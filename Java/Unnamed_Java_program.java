@@ -14,3 +14,13 @@
 	@author 〈作者稱謂〉
 	@copyright 〈授權條款段落〉
 */
+
+/**
+  @brief Unnamed_Java_program class
+*/
+public class Unnamed_Java_program{
+	Unnamed_Java_program(){
+	
+	}
+
+}
