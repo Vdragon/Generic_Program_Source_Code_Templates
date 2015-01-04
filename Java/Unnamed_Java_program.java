@@ -1,5 +1,6 @@
-/* 
-	Unnamed Java program.java
+/** 
+	@file Unnamed_Java_program.java
+	@brief 尚未命名的 Java 程式
 	
 	本來源程式碼的架構基於「通用程式來源程式碼範本」專案
 	This source code's structure is based on "Generic Program Source Code Templates" project
@@ -9,4 +10,7 @@
 	Recommended text editor settings
 		Indentation by tab character
 		Tab character width = 2 space characters
+	
+	@author 〈作者稱謂〉
+	@copyright 〈授權條款段落〉
 */

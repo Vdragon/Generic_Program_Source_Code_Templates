@@ -1,5 +1,7 @@
-/* 
-	Unnamed C or C++ program.c
+/** 
+	@file Unnamed C or C++ program.c
+	@brief 尚未命名的 C 或 C++ 程式
+	
 	請見本檔案的標頭(header)檔案（如果有的話）以得到更多關於本程式的說明
 	
 	本來源程式碼的架構基於「通用程式來源程式碼範本」專案
@@ -10,6 +12,9 @@
 	Recommended text editor settings
 		Indentation by tab character
 		Tab character width = 2 space characters
+	
+	@author 〈作者稱謂〉
+	@copyright 〈授權條款段落〉
 */
 /* 程式所引入(include)之函式庫的標頭(header)檔案
  * Included library headers */
@@ -134,23 +139,13 @@
 
 /* 函式的實作
  * Function implementations */
-	/* # 主程式（C/C++ 程式的進入點）
-	   ## 參數
-	   ### argc
-	   呼叫此程式的命令列參數數量
-	   
-	   ### argv[]
-	   存放呼叫此程式的命令列參數陣列 
-	   
-	   ## 回傳值
-	   ### EXIT_SUCCESS（此常數的定義位於 stdlib.h）
-	   代表程式執行成功
-	   
-	   ### EXIT_FAILURE（此常數的定義位於 stdlib.h）
-	   代表程式執行失敗
-	   
-	   ### 其他數值
-	   由開發者自行定義 */
+	/** @brief 主程式（C/C++ 程式的進入點）
+	    @param argc 呼叫此程式的命令列參數數量
+	    @param argv 存放呼叫此程式的命令列參數陣列 
+	    @returns 此程式要傳回作業系統的結束狀態碼
+			@retval EXIT_SUCCESS 代表程式執行成功（此常數的定義位於 stdlib.h）
+	    @retval EXIT_FAILURE 代表程式執行失敗（此常數的定義位於 stdlib.h）
+	    @retval 其他數值 由開發者自行定義 */
 	int main(int argc, char* argv[]){
 		
 		return EXIT_SUCCESS;
