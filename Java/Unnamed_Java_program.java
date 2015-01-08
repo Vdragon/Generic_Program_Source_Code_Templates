@@ -27,6 +27,9 @@
 */
 public class Unnamed_Java_program{
 	Unnamed_Java_program(){
+	/* 類別變數
+	   Class fields */
+	   
 	
 	}
 
