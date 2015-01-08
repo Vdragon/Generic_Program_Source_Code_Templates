@@ -2,6 +2,11 @@
 	@file Unnamed_Java_program.java
 	@brief 尚未命名的 Java 程式
 	
+	本來源程式碼為「〈軟體名稱〉」軟體的一部份
+	This source code is part of "<software name>" software
+	
+		〈軟體官方網站網址(<software official site url>)〉
+	
 	本來源程式碼的架構基於「通用程式來源程式碼範本」專案
 	This source code's structure is based on "Generic Program Source Code Templates" project
 		https://github.com/Vdragon/Generic_Program_Source_Code_Templates
