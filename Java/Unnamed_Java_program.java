@@ -37,5 +37,11 @@ public class Unnamed_Java_program{
 	
 	/* 類別方法
 	   Class methods */
-
+	/** 
+	 * @brief Java 程式進入點
+	 * @param args 存放命令列參數的字串陣列 */
+	public static void main(String[] args){
+	
+		return;
+	}
 }
