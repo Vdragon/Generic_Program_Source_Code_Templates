@@ -20,6 +20,8 @@
 	@copyright 〈授權條款段落〉
 */
 
+/* Imported Java packages */
+
 /**
   @brief Unnamed_Java_program class
 */
