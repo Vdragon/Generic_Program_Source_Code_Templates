@@ -23,7 +23,7 @@
 /* Imported Java packages */
 
 /**
-  @brief Unnamed_Java_program class
+  @brief Unnamed_Java_program 類別
 */
 public class Unnamed_Java_program{
 	Unnamed_Java_program(){
