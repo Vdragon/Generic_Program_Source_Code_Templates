@@ -25,11 +25,17 @@
   @brief Unnamed_Java_program 類別
 */
 public class Unnamed_Java_program{
-	Unnamed_Java_program(){
+	/**
+		@brief Unnamed_Java_program 類別的 constructor
+	*/
+	public Unnamed_Java_program(){
+		return;
+	}
+	
 	/* 類別變數
 	   Class fields */
 	   
-	
-	}
+	/* 類別方法
+	   Class methods */
 
 }
