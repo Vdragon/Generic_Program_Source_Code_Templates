@@ -4,7 +4,6 @@
 	
 	本來源程式碼為「〈軟體名稱〉」軟體的一部份
 	This source code is part of "<software name>" software
-	
 		〈軟體官方網站網址(<software official site url>)〉
 	
 	本來源程式碼的架構基於「通用程式來源程式碼範本」專案
