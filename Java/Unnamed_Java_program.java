@@ -27,7 +27,8 @@
 public class Unnamed_Java_program{
 	/* 類別變數
 	   Class fields */
-	   
+	
+	/* Class constructors and finalizers */
 	/**
 		@brief Unnamed_Java_program 類別的 constructor
 	*/
