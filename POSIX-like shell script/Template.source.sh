@@ -1,26 +1,6 @@
-################## Header block ##################
-# Script程式名稱
-# Script Name
-# 	
-# 著作權宣告
-# Copyright Declaration
-# 	Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com> (c) 2014
-# 授權條款宣告
-# License Declaration
-# 	〈你的軟體的授權條款(License of your software)〉
-# 傳回值定義
-# Return Value Definition
-# 	0
-# 		正常結束
-# 已知問題
-# Known Issues
-# 	Known issues is now tracked on GitHub
-# 	
-# 修訂紀錄
-# Changelog
-# 	Changelog is now tracked using Git repostiory commit log
-# 	
-############## Header block ended ##############
+# 〈程式檔名〉 - 〈程式描述文字（一言以蔽之）〉
+# 〈程式智慧財產權擁有者名諱、地址（選用）〉 © 〈智慧財產權生效年〉
+# 〈更多程式描述文字〉
 
 ######## Included files ########
 
