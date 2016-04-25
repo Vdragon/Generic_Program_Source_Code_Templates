@@ -8,13 +8,6 @@
 This project is licensed as CC0.
 To the extent possible under law, Vdragon(Vdragon.Taiwan@gmail.com) has waived all copyright and related or neighboring rights to 通用來源碼範本(Generic Source Code Templates). This work is published from: 台灣.
 
-## 檔案與目錄說明<br />File and directory description
-* README.md
-	* 本說明文件  
-	  This documentation
-
-## 常見問題與解答<br />Frequently Asked Questions and answers
-
 ## 如何對本專案做出貢獻<br />How to contribute to this project
 ### 回報問題與改善建議<br />Report issues and improvement suggestions
 * 發現問題或是有改善本專案的建議的話請到[本專案的問題追蹤系統(issue tracker)](https://github.com/Vdragon/Generic_Source_Code_Templates/issues)建檔回報
