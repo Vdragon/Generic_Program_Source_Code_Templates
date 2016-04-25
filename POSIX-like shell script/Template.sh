@@ -41,12 +41,6 @@ readonly PROGRAM_ARGUMENT_ORIGINAL_NUMBER=$#
 # main function, program entry point
 # idea from http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 main() {
-	## 啟用除錯模式
-	set -x
-
-
-	## 停用除錯模式
-	set +x
 
 	## 正常結束 script 程式
 	exit 0
