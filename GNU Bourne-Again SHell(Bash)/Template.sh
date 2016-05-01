@@ -9,7 +9,7 @@
 ######## Included files ended ########
 
 ######## File scope variable definitions ########
-# Defensive Bash Programming
+# Defensive Bash Programming - not-overridable primitive definitions
 # http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 readonly PROGRAM_FILENAME="$(basename "$0")"
 readonly PROGRAM_DIRECTORY="$(realpath --no-symlinks "$(dirname "$0")")"
@@ -19,8 +19,7 @@ readonly PROGRAM_ARGUMENT_ORIGINAL_NUMBER=$#
 ######## File scope variable definitions ended ########
 
 ######## Program ########
-# main function, program entry point
-# Also from Defensive Bash Programming
+# Defensive Bash Programming - main function, program entry point
 # http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 main() {
 
