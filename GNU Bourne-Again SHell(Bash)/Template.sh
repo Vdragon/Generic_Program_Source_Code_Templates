@@ -9,7 +9,8 @@
 ######## Included files ended ########
 
 ######## File scope variable definitions ########
-# idea from http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
+# Defensive Bash Programming
+# http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 readonly PROGRAM_FILENAME="$(basename "$0")"
 readonly PROGRAM_DIRECTORY="$(realpath --no-symlinks "$(dirname "$0")")"
 readonly PROGRAM_ARGUMENT_ORIGINAL_LIST="$@"
@@ -19,7 +20,8 @@ readonly PROGRAM_ARGUMENT_ORIGINAL_NUMBER=$#
 
 ######## Program ########
 # main function, program entry point
-# idea from http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
+# Also from Defensive Bash Programming
+# http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
 main() {
 
 	## 正常結束 script 程式
