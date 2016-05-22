@@ -16,6 +16,9 @@ readonly PROGRAM_DIRECTORY="$(realpath --no-symlinks "$(dirname "$0")")"
 readonly PROGRAM_ARGUMENT_ORIGINAL_LIST="$@"
 readonly PROGRAM_ARGUMENT_ORIGINAL_NUMBER=$#
 
+# 將未定義的變數視為錯誤
+set -u
+
 ######## File scope variable definitions ended ########
 
 ######## Program ########
