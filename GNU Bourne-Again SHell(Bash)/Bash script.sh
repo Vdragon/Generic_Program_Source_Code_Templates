@@ -11,10 +11,10 @@
 ######## File scope variable definitions ########
 # Defensive Bash Programming - not-overridable primitive definitions
 # http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
-readonly PROGRAM_FILENAME="$(basename "$0")"
-readonly PROGRAM_DIRECTORY="$(realpath --no-symlinks "$(dirname "$0")")"
-readonly PROGRAM_ARGUMENT_ORIGINAL_LIST="$@"
-readonly PROGRAM_ARGUMENT_ORIGINAL_NUMBER=$#
+declare -r PROGRAM_FILENAME="$(basename "$0")"
+declare -r PROGRAM_DIRECTORY="$(realpath --no-symlinks "$(dirname "$0")")"
+declare -r PROGRAM_ARGUMENT_ORIGINAL_LIST="$@"
+declare -r PROGRAM_ARGUMENT_ORIGINAL_NUMBER=$#
 
 ## Unofficial Bash Script Mode
 ## http://redsymbol.net/articles/unofficial-bash-strict-mode/
