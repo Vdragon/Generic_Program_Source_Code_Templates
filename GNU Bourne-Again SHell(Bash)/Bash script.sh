@@ -4,10 +4,6 @@
 # 〈程式智慧財產權擁有者名諱、地址（選用）〉 © 〈智慧財產權生效年〉
 # 〈更多程式描述文字〉
 
-######## Included files ########
-
-######## Included files ended ########
-
 ######## File scope variable definitions ########
 # Defensive Bash Programming - not-overridable primitive definitions
 # http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
@@ -28,6 +24,10 @@ set -e
 set -o pipefail
 
 ######## File scope variable definitions ended ########
+
+######## Included files ########
+
+######## Included files ended ########
 
 ######## Program ########
 # Defensive Bash Programming - main function, program entry point
