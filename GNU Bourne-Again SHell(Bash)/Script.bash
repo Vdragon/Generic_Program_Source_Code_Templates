@@ -428,13 +428,29 @@ declare -fr meta_processCommandlineArguments
 
 ## Print single segment of commandline option help
 meta_util_printSingleCommandlineOptionHelp(){
-	local long_option="${1}"; shift
-	local short_option="${1}"; shift
-	local details="${1}"
-	readonly long_option short_option details
+	if [ "${#}" -ne 3 ] && [ "${#}" -ne 4 ]; then
+		printf "ERROR: %s: Wrong parameter quantity!\n" 1>&2
+		return "${COMMON_RESULT_FAILURE}"
+	fi
+
+	local description="${1}"; shift # Option description
+	local long_option="${1}"; shift # The long version of option
+	local short_option="${1}" # The short version of option
+	readonly description long_option short_option
+
+	if [ "${#}" -eq 4 ]; then
+		shift
+		local current_value="${1}" # Current value of option, if option has value
+		readonly current_value
+	fi
 
 	printf "### %s / %s ###\n" "${long_option}" "${short_option}"
-	printf "%s\n" "${details}"
+	printf "%s\n" "${description}"
+
+	if [ "${#}" -eq 4 ]; then
+		printf "Current value: %s\n" "${current_value}"
+	fi
+
 	printf "\n" # Separate with next option(or next heading)
 	return "${COMMON_RESULT_SUCCESS}"
 }
@@ -458,8 +474,8 @@ meta_printHelpMessage(){
 	printf "\t%s <commandline options>\n" "${RUNTIME_COMMAND_BASE}"
 	printf "\n"
 	printf "### Command-line Options ###\n"
-	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_DISPLAY_HELP_LONG}" "${COMMANDLINE_OPTION_DISPLAY_HELP_SHORT}" "${COMMANDLINE_OPTION_DISPLAY_HELP_DETAILS}"
-	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_DETAILS}"
+	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_DISPLAY_HELP_DETAILS}" "${COMMANDLINE_OPTION_DISPLAY_HELP_LONG}" "${COMMANDLINE_OPTION_DISPLAY_HELP_SHORT}"
+	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_DETAILS}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT}"
 	return "${COMMON_RESULT_SUCCESS}"
 }
 readonly -f meta_printHelpMessage
