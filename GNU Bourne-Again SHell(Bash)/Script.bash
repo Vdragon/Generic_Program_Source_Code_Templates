@@ -360,11 +360,11 @@ esac
 ## Program's Commandline Options Definitions
 declare -r COMMANDLINE_OPTION_DISPLAY_HELP_LONG="--help"
 declare -r COMMANDLINE_OPTION_DISPLAY_HELP_SHORT="-h"
-declare -r COMMANDLINE_OPTION_DISPLAY_HELP_DETAILS="Display help message"
+declare -r COMMANDLINE_OPTION_DISPLAY_HELP_DESCRIPTION="Display help message"
 
 declare -r COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG="--debug"
 declare -r COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT="-d"
-declare -r COMMANDLINE_OPTION_ENABLE_DEBUGGING_DETAILS="Enable debug mode"
+declare -r COMMANDLINE_OPTION_ENABLE_DEBUGGING_DESCRIPTION="Enable debug mode"
 
 ## Program Configuration Variables
 declare -i global_just_show_help=0
@@ -474,8 +474,8 @@ meta_printHelpMessage(){
 	printf "\t%s <commandline options>\n" "${RUNTIME_COMMAND_BASE}"
 	printf "\n"
 	printf "## Command-line Options ##\n"
-	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_DISPLAY_HELP_DETAILS}" "${COMMANDLINE_OPTION_DISPLAY_HELP_LONG}" "${COMMANDLINE_OPTION_DISPLAY_HELP_SHORT}"
-	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_DETAILS}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT}"
+	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_DISPLAY_HELP_DESCRIPTION}" "${COMMANDLINE_OPTION_DISPLAY_HELP_LONG}" "${COMMANDLINE_OPTION_DISPLAY_HELP_SHORT}"
+	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_DESCRIPTION}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT}"
 	return "${COMMON_RESULT_SUCCESS}"
 }
 readonly -f meta_printHelpMessage
