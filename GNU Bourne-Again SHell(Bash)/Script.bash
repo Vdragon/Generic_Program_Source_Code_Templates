@@ -174,6 +174,7 @@ meta_workaround_errexit_setup() {
 	fi
 	return "${COMMON_RESULT_SUCCESS}"
 }
+declare -fr meta_workaround_errexit_setup
 
 ## Runtime Dependencies Checking
 ## shell - Check if a program exists from a Bash script - Stack Overflow
@@ -391,7 +392,7 @@ meta_util_array_shift(){
 
 	return "${COMMON_RESULT_SUCCESS}"
 }
-readonly -f meta_util_array_shift
+declare -fr meta_util_array_shift
 
 ## Understand what argument is in the command, and set the global variables accordingly.
 meta_processCommandlineArguments() {
@@ -454,6 +455,7 @@ meta_util_printSingleCommandlineOptionHelp(){
 	printf "\n" # Separate with next option(or next heading)
 	return "${COMMON_RESULT_SUCCESS}"
 }
+declare -fr meta_util_printSingleCommandlineOptionHelp
 
 ## Print help message whenever:
 ##   * User requests it
@@ -478,7 +480,7 @@ meta_printHelpMessage(){
 	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_DESCRIPTION}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT}"
 	return "${COMMON_RESULT_SUCCESS}"
 }
-readonly -f meta_printHelpMessage
+declare -fr meta_printHelpMessage
 
 ## Defensive Bash Programming - init function, program's entry point
 ## http://www.kfirlavi.com/blog/2012/11/14/defensive-bash-programming/
