@@ -473,7 +473,7 @@ meta_printHelpMessage(){
 	printf "## Usage ##\n"
 	printf "\t%s <commandline options>\n" "${RUNTIME_COMMAND_BASE}"
 	printf "\n"
-	printf "### Command-line Options ###\n"
+	printf "## Command-line Options ##\n"
 	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_DISPLAY_HELP_DETAILS}" "${COMMANDLINE_OPTION_DISPLAY_HELP_LONG}" "${COMMANDLINE_OPTION_DISPLAY_HELP_SHORT}"
 	meta_util_printSingleCommandlineOptionHelp "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_DETAILS}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG}" "${COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT}"
 	return "${COMMON_RESULT_SUCCESS}"
