@@ -55,6 +55,8 @@ declare -Ar META_RUNTIME_DEPENDENCIES=()
 ## Common constant definitions
 declare -ir COMMON_RESULT_SUCCESS=0
 declare -ir COMMON_RESULT_FAILURE=1
+declare -ir COMMON_BOOLEAN_TRUE=0
+declare -ir COMMON_BOOLEAN_FALSE=1
 
 ## Notes
 ### realpath's commandline option, `--strip` will be replaced in favor of `--no-symlinks` after April 2019(Ubuntu 14.04's Support EOL)
@@ -368,8 +370,8 @@ declare -r COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT="-d"
 declare -r COMMANDLINE_OPTION_ENABLE_DEBUGGING_DESCRIPTION="Enable debug mode"
 
 ## Program Configuration Variables
-declare -i global_just_show_help=0
-declare -i global_enable_debugging=0
+declare -i global_just_show_help="${COMMON_BOOLEAN_FALSE}"
+declare -i global_enable_debugging="${COMMON_BOOLEAN_FALSE}"
 
 ## Drop first element from array and shift remaining elements 1 element backward
 meta_util_array_shift(){
@@ -408,10 +410,10 @@ meta_processCommandlineArguments() {
 			else
 				case "${arguments[0]}" in
 					"${COMMANDLINE_OPTION_DISPLAY_HELP_LONG}"|"${COMMANDLINE_OPTION_DISPLAY_HELP_SHORT}")
-						global_just_show_help=1
+						global_just_show_help="${COMMON_BOOLEAN_TRUE}"
 						;;
 					"${COMMANDLINE_OPTION_ENABLE_DEBUGGING_LONG}"|"${COMMANDLINE_OPTION_ENABLE_DEBUGGING_SHORT}")
-						global_enable_debugging=1
+						global_enable_debugging="${COMMON_BOOLEAN_TRUE}"
 						;;
 					*)
 						printf "ERROR: Unknown command-line argument \"%s\"\n" "${arguments[0]}" >&2
@@ -496,10 +498,10 @@ init() {
 		global_just_show_help\
 		global_enable_debugging
 
-	if [ "${global_enable_debugging}" -eq 1 ]; then
+	if [ "${global_enable_debugging}" -eq "${COMMON_BOOLEAN_TRUE}" ]; then
 		set -o xtrace
 	fi
-	if [ "${global_just_show_help}" -eq 1 ]; then
+	if [ "${global_just_show_help}" -eq "${COMMON_BOOLEAN_TRUE}" ]; then
 		meta_printHelpMessage
 		exit "${COMMON_RESULT_SUCCESS}"
 	fi
