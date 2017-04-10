@@ -47,7 +47,10 @@ declare META_SOFTWARE_INSTALL_STYLE="SHC"
 
 ### These are the dependencies that the script foundation needs, and needs to be checked IMMEDIATELY
 declare -r META_RUNTIME_DEPENDENCIES_DESCRIPTION_GNU_COREUTILS="GNU Coreutils"
-declare -Ar META_RUNTIME_DEPENDENCIES_CRITICAL=(["basename"]="${META_RUNTIME_DEPENDENCIES_DESCRIPTION_GNU_COREUTILS}" ["realpath"]="${META_RUNTIME_DEPENDENCIES_DESCRIPTION_GNU_COREUTILS}")
+declare -Ar META_RUNTIME_DEPENDENCIES_CRITICAL=(
+	["basename"]="${META_RUNTIME_DEPENDENCIES_DESCRIPTION_GNU_COREUTILS}"
+	["realpath"]="${META_RUNTIME_DEPENDENCIES_DESCRIPTION_GNU_COREUTILS}"
+)
 
 ### These are the dependencies that are used later and also checked later
 declare -Ar META_RUNTIME_DEPENDENCIES=()
